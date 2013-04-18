@@ -10,12 +10,14 @@ Building and running
 
 This has been tested with libqt4 and libqt4.8, I'd recommend 4.8 several people have shown interest in running this on the Raspberry Pi, as the current distro of choice for the Pi is raspbian which is based on Debian Wheezy and comes with libqt4.8 it should be as simple as the following to get it to run:
 
+'''
   sudo apt-get install libqt4-webkit
   git clone https://github.com/csldevices/sweb.git
   cd sweb
   qmake
   make
   ./sweb
+'''
 
 I haven't tested the above on a raspberry pi specfically but it should work fine, for none debian based systems ignore the first step and instead install qt4 and libqt-webkit using your distributions favourite pacakge manager. I guess this should work on other platforms than Linux, ie. any platfrom the Qt toolkit runs on but again, not been tested.
 
