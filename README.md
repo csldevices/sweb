@@ -19,10 +19,12 @@ This has been tested with libqt4 and libqt4.8, I'd recommend 4.8 several people 
   ./sweb
 ```
 
-I haven't tested the above on a raspberry pi specfically but it should work fine, for none debian based systems ignore the first step and instead install qt4 and libqt-webkit using your distributions favourite pacakge manager. I guess this should work on other platforms than Linux, ie. any platfrom the Qt toolkit runs on but again, not been tested.
+I haven't tested the above on a raspberry pi specfically but it should work fine, for non-debian based systems ignore the first step and instead install qt4 and libqt-webkit using your distributions favourite package manager. I guess this should work on other platforms than Linux, ie. any platfrom the Qt toolkit runs on, but again this has not been tested.
 
-By default sweb tries to load whatever is running on port 80 of the local machine, but if you pass a url on the command line it will go to that instead, so:
+By default sweb tries to load whatever is running on port 80 of the local machine, but if you pass a url on the command line it will go to that instead, for example:
 
+```
   ./sweb http://www.google.com
+```
 
 There is no built in method to exit sweb so you'll need to kill it from a command line.
