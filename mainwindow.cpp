@@ -60,6 +60,7 @@ MainWindow::MainWindow(const QUrl& url)
     QNetworkProxyFactory::setUseSystemConfiguration(true);
 
     view = new QWebView(this);
+    view->setContextMenuPolicy(Qt::NoContextMenu);
     view->load(url);
 
 
